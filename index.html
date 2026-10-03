@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filiz: Habit Tracker</title>
+  <meta name="description" content="Filiz is a habit tracker with a little sprout that grows every time you keep a habit. Build a streak, watch it bloom in 66 days.">
+  <meta property="og:title" content="Filiz: Habit Tracker">
+  <meta property="og:description" content="Small habits. Big change. Grow Filiz with every habit you keep.">
+  <meta property="og:image" content="assets/filiz-stage5.png">
+  <meta name="theme-color" content="#0d1423">
+  <!-- Add once the app is live: <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/icon.png" alt=""><span>Filiz</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#garden">Semra's Garden</a>
+        <a href="#pricing">Pricing</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Small habits. Big change.</h1>
+          <p class="lede">Filiz is a little sprout that grows every time you keep a habit. Show up for 66 days and watch it bloom.</p>
+          <!-- Coming soon: make it <a class="store-button" href="https://apps.apple.com/app/idAPP_ID"> once live. -->
+          <span class="store-button is-soon" role="text">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>
+            Coming soon to the App Store
+          </span>
+          <p class="note">Free to start. For iPhone and Apple Watch.</p>
+        </div>
+
+        <div class="grow" id="how">
+          <div class="grow-stage" aria-hidden="true">
+            <img src="assets/filiz-stage1.png" alt="">
+            <img src="assets/filiz-stage2.png" alt="">
+            <img src="assets/filiz-stage3.png" alt="">
+            <img src="assets/filiz-stage4.png" alt="">
+            <img src="assets/filiz-stage5.png" alt="">
+          </div>
+          <div class="grow-readout">
+            <span class="grow-day" id="grow-day">Day 0</span>
+            <span class="grow-label" id="grow-label">A tiny seed</span>
+          </div>
+          <label class="visually-hidden" for="grow-range" style="position:absolute;left:-9999px">Days of keeping your habits</label>
+          <input id="grow-range" type="range" min="0" max="66" value="0" step="1">
+          <div class="grow-marks" aria-hidden="true"><span>0</span><span>7</span><span>21</span><span>66</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>Log a habit in one tap</h2>
+          <p class="intro">No streak-shaming, no complicated setup. Check things off and Filiz cheers you on.</p>
+          <ol class="steps">
+            <li><span class="dot">1</span><div><h3>Answer three questions</h3><p>Tell Filiz what you want to improve and when your day has room. You get a starter plan in a minute.</p></div></li>
+            <li><span class="dot">2</span><div><h3>Check off your day</h3><p>Tap once for done, or fill up glasses of water and minutes of reading. Filiz celebrates when the day is complete.</p></div></li>
+            <li><span class="dot">3</span><div><h3>Watch it grow</h3><p>Every day you show up counts toward the next stage. Miss one and Filiz just gets a little thirsty. Growth is never lost.</p></div></li>
+          </ol>
+        </div>
+        <div class="phones">
+          <div class="phone"><img src="assets/screen-home.jpg" alt="Filiz home screen with today's habits and Filiz in the progress card" loading="lazy"></div>
+          <div class="phone"><img src="assets/screen-log.jpg" alt="Logging water: a glass filling up to 5 of 8" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Filiz goes where you go</h2>
+        <p class="intro">Keep your habits in view without opening the app.</p>
+        <div class="everywhere">
+          <div><h3>Dynamic Island and Lock Screen</h3><p>See what's left today and log the next habit right from the island.</p></div>
+          <div><h3>Home Screen widgets</h3><p>Check off habits with a tap, and keep Filiz on your Home Screen.</p></div>
+          <div><h3>Apple Watch</h3><p>Log from your wrist and add Filiz to your watch face.</p></div>
+          <div><h3>Apple Health</h3><p>Steps, water, workouts, mindful minutes and sleep fill in by themselves.</p></div>
+          <div><h3>Siri and Shortcuts</h3><p>Say "Log Drink Water in Filiz" and it's done.</p></div>
+          <div><h3>Private by design</h3><p>No account. Your habits stay on your iPhone.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section garden" id="garden">
+      <div class="wrap">
+        <h2>Semra's Garden</h2>
+        <p class="intro">Every 66 days of showing up, the Filiz you grew blooms into a flower and is planted in your garden. Then a new sprout begins.</p>
+        <div class="garden-row">
+          <figure><img src="assets/garden-semra.png" alt="Filiz wearing a crown of pink, red and white tulips" loading="lazy"><figcaption>Semra</figcaption></figure>
+          <figure><img src="assets/garden-sunflower.png" alt="Filiz wearing a crown of sunflowers" loading="lazy"><figcaption>Sunny</figcaption></figure>
+          <figure><img src="assets/garden-sakura.png" alt="Filiz wearing a crown of cherry blossoms" loading="lazy"><figcaption>Sakura</figcaption></figure>
+          <figure><img src="assets/garden-lavender.png" alt="Filiz wearing a crown of lavender" loading="lazy"><figcaption>Lavender</figcaption></figure>
+        </div>
+        <div class="dedication">
+          <p>The first flower in every garden is Semra, a crown of tulips. Semra was my mother, and tulips were her flower. Filiz means "sprout" in Turkish, and this app is how I keep her close: in the place where small, patient effort turns into something beautiful.</p>
+          <small>Made with love, in memory of Semra.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <h2>Free to grow. Pro to flourish.</h2>
+        <p class="intro">Start for free. Upgrade when you want more room.</p>
+        <div class="plans">
+          <div class="plan">
+            <h3>Free</h3>
+            <p class="price">Forever</p>
+            <ul>
+              <li>Up to five habits</li>
+              <li>Filiz, streaks and celebrations</li>
+              <li>Widgets, Apple Watch and Dynamic Island</li>
+              <li>Semra and Sunny in your garden</li>
+            </ul>
+          </div>
+          <div class="plan pro">
+            <h3>Pro</h3>
+            <p class="price">Monthly or yearly, with a 7-day free trial on the yearly plan</p>
+            <ul>
+              <li>Unlimited habits</li>
+              <li>Your full progress history</li>
+              <li>Personal insights</li>
+              <li>All six flowers and extra app icons</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="prose">
+        <h2>Questions</h2>
+        <details><summary>What happens if I miss a day?</summary><p>Filiz never shrinks. Your growth is based on all the days you've shown up, so a missed day only makes Filiz a little thirsty until your next check-off.</p></details>
+        <details><summary>Why 66 days?</summary><p>Research from University College London found that a new habit takes about 66 days on average to become automatic. Filiz blooms right on time.</p></details>
+        <details><summary>Do I need an account?</summary><p>No. Filiz works without an account and keeps your habits on your iPhone.</p></details>
+        <details><summary>Does Filiz read my health data?</summary><p>Only if you connect Apple Health, and only to fill in the habits you link. Filiz never writes to Health and your data never leaves your device.</p></details>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="wrap">
+        <img src="assets/filiz-celebrate.png" alt="Filiz jumping with joy" loading="lazy">
+        <h2>Plant your first habit today</h2>
+        <p class="intro">It takes a minute to start, and Filiz will be with you every day after.</p>
+        <span class="store-button is-soon" role="text">Coming soon to the App Store</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Filiz: Habit Tracker</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
